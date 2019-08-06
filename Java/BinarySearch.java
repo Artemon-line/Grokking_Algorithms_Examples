@@ -1,8 +1,8 @@
-package binarySearch.java;
+package Java;
 
 import java.util.Random;
 
-import assets.Helper;
+import Java.assets.Helper;
 
 /**
  * binarySearch
@@ -36,8 +36,8 @@ public class BinarySearch {
 
     public static void main(String args[]) {
         int[] intArray = { 1, 3, 5, 7, 9, 11, 16, 17, 19, 22, 25, 27, 29, 33 };
-        int find = new Random().ints(1, 33).findFirst().getAsInt();
-        Integer result = BinarySearch.findIndex(intArray, find);
-        System.out.println(result);
+        int target = new Random().ints(1, 33).findFirst().getAsInt();
+        Integer result = BinarySearch.findIndex(intArray, target);
+        System.out.println(String.format("%d is on %d", target, result));
     }
 }
