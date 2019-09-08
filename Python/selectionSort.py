@@ -22,5 +22,6 @@ def selectionSort(list):
     return newArr
 
 
-res = selectionSort([5, 3, 6, 2, 10, 4, 8, 9, 22, 19])
+if __name__ == "__main__":
+    res = selectionSort([5, 3, 6, 2, 10, 4, 8, 9, 22, 19])
 print(res)

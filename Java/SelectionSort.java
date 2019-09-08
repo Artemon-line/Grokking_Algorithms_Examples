@@ -1,5 +1,6 @@
 package Java;
 
+import java.util.Arrays;
 import Java.assets.Helper;
 
 class SelectionSort {
@@ -29,8 +30,6 @@ class SelectionSort {
         SelectionSort alg = new SelectionSort();
         int[] arr = { 5, 3, 6, 2, 10, 4, 8, 9, 22, 19 };
         int[] res = alg.selectionSort(arr);
-        for (int i = 0; i < res.length - 1; i++) {
-            System.out.println(res[i]);
-        }
+        System.out.println(Arrays.toString(res));
     }
 }
